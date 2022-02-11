@@ -1,7 +1,25 @@
-<h1>Login</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static '/css/login-style.css' %}">
+</head>
+<body>
+    
+
+<img src="{% static 'images/visn-logo.png' %}">
+<h1 id="login-title">Login</h1>
 
 <form method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="Login">
 </form>
+
+</body>
+</html>
