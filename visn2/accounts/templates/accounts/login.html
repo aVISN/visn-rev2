@@ -1,5 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="{% static '/css/login-style.css' %}">
 </head>
-<body>
+<body> -->
     
 
 <img src="{% static 'images/visn-logo.png' %}">
@@ -17,9 +17,14 @@
 
 <form method="POST">
     {% csrf_token %}
-    {{form.as_p}}
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="text" name="password" placeholder="Password"><br>
     <input type="submit" value="Login">
 </form>
 
-</body>
-</html>
+{% for message in messages %}
+    <p id="messages">{{message}}</p>
+{% endfor %}
+
+<!-- </body>
+</html> -->

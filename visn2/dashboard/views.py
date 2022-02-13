@@ -4,5 +4,6 @@ from django.urls import reverse_lazy
 
 
 
-def tempView(request):
-    return HttpResponse('temp view for dashboard')
+def dashboardView(request):
+    context = {}
+    return render(request, 'dashboard/dashboard.html', context)

@@ -5,4 +5,5 @@ from django.urls import reverse_lazy
 # from django.contrib.auth.views import LoginView
 
 def tempFrontPageView(request):
-    return HttpResponse('temp view for front page')
+    context = {}
+    return render(request,'frontpage/frontpage.html',context)
