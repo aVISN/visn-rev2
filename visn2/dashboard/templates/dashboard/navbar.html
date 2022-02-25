@@ -9,18 +9,25 @@
         <div class="navbar-collapse collapse" id="navbarsExample04" style="">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link" href="{% url 'contacts' %}">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Messages</a>
+                    <a class="nav-link" href="{% url 'files' %}">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'projects' %}">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
+                
             </ul>
+            <div class="nav-item">
+                <a class="nav-link" id="greeting" style="color:white;">Hello, ^^USERNAME^^</a>
+            </div>
             <!-- <img src="#" width="30" height="30" class="invisible"> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>

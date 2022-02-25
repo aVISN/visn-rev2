@@ -38,9 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'frontpage.apps.FrontpageConfig',
+    # added apps
     'accounts.apps.AccountsConfig',
+    'chat.apps.ChatConfig',
+    'contacts.apps.ContactsConfig',
     'dashboard.apps.DashboardConfig',
+    'files.apps.FilesConfig',
+    'frontpage.apps.FrontpageConfig',
+    'projects.apps.ProjectsConfig',
+    #crispy bootstrap
+    'crispy_forms',
+    'crispy_bootstrap5',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -122,12 +132,25 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# add crispy forms bootstrap5 templates
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 MEDIA_URL = '/images/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static')
+# ]
+
+# set redirects for successful login/logout requests
+LOGIN_REDIRECT_URL = 'dashboard'
+LOGOUT_REDIRECT_URL = 'login'
+
+# set directory for media files (files uploaded by users)
+MEDIA_URL = '/files/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

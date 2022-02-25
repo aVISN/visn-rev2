@@ -1,0 +1,8 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1> All Projects</h1>
+    <a class="nav-link" href="{% url 'project' %}">Link to Specific Project</a>
+    <p>Every Project will have a link with ID (dynamic) </p>
+{% endblock content %}
