@@ -1,59 +1,12 @@
+{% extends 'dashboard/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    {% block content %}
 
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    
-    
-
-</head>
-<body>
     <!-- Navbar -->
-    <nav class="sticky-top navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="{% static 'images/visn-logo.png' %}" class="rounded-1 border border-danger" width="100" height="30"></a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarsExample04" style="">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Messages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-              </li>
-            </ul>
-            <!-- <img src="#" width="30" height="30" class="invisible"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-            </svg>
-            <i class="bi bi-gear" width="30" height="30"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
-                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"></path>
-                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"></path>
-              </svg>
-          </div>
-        </div>
-      </nav>
+    {% include 'dashboard/navbar.html' %}
+        
       <!-- Under Nav -->
         <div class="row mt-3 pe-0 me-0 position-relative">
             <div class="container col-md-9">
@@ -68,7 +21,7 @@
                             <button class="btn btn-primary bg-gradient d-inline">Add Project</button>
                         </div>
                         <!-- Arrows and Projects -->
-                        <div class="container mt-3">
+                        <div class="container mt-3 ps-0">
                             <div class="row">
                                 <!-- Left Arrow Container -->
                                 <div class="col pe-0">
@@ -133,90 +86,41 @@
                 <!-- Project Details -->
                 <section class="ms-2 mt-3">
                     <div class="container">
-                        <h3 class="container border-bottom">
-                            Current Project
+                        <h3 class="container border-bottom mt-5">
+                            <!-- Current Project -->
                         </h3>
-                        <div class="container">
+                        <div class="container mt-4">
                             <div class="row">
-                                <div class="col-8 border m-2 rounded-1" height="150">
-                                    <h3>Project Name</h3>
-                                    <h5 class="">Deadline</h2>
-                                    <p>Short Description</p>
+                                <div class="col-4 pt-3 ps-3 border text-center" height="150">
+                                    <div class="col-9 w-100">
+                                        <h3 class="">Project Name</h3>
+                                        <h5 class="">Deadline</h2>
+                                        <p>Short Description about the project blah blah</p>
+                                    </div>
                                 </div>
-                                <div class="col border m-2 pt-4 rounded-1 text-center" height="150">
-                                    <h3 class="mb-4">8</h3>
-                                    <h5 class="pt-1 mb-4">Files</h2>
+                                <!-- files -->
+                                <div class="col-2 text-center pt-4 mt-2 ps-5" height="150">
+                                    <h1 class="">8</h1>
+                                    <h5 class="pt-4 mt-3">Files</h5>
+                                    
                                 </div>
-                                <!-- <div class="col border m-2 rounded-1 text-center" height="150">
-                                    <h5 class="border-bottom">Contacts</h5>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
+                                <!-- Creator and img -->
+                                <div class="col-3 text-center pt-3  pe-5" height="150">
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                        </svg>
                                     </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                        <div class="col">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                              </svg>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="col border m-2 rounded-1 text-center" height="150">
-                                    <h5 class="border-bottom mb-3">Progress</h5>
+                                    <h5 class="pt-2">Creator</h5>
+                                </div>
+                                <!-- progress -->
+                                <div class="col-3 text-center pt-4" height="150">
                                     <div class="progress">
                                         <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h1 class="pt-2">50%</h1>
-                                    
+                                    <h1 class="pt-3 mb-3">50%</h1>
+                                    <h5 class="">Progress</h5>  
                                 </div>
                             </div>
                         </div>
@@ -224,9 +128,9 @@
                     </div>
                 </section>
                 <!-- Updates Tasks Deadlines -->
-                <section class="container mt-3" style="height:75%;">
+                <section class="container mt-5 border-top pt-2">
                     <div class="container">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                               <button class="nav-link active" id="updates-tab" data-bs-toggle="tab" data-bs-target="#updates" type="button" role="tab" aria-controls="updates" aria-selected="true">Updates</button>
                             </li>
@@ -236,8 +140,15 @@
                             <li class="nav-item" role="presentation">
                               <button class="nav-link" id="deadlines-tab" data-bs-toggle="tab" data-bs-target="#deadlines" type="button" role="tab" aria-controls="deadlines" aria-selected="false">Deadlines</button>
                             </li>
-                        </ul>
-                        <div class="tab-content mt-2 border rounded-3 p-3" id="myTabContent">
+                        </ul> -->
+                        <div class="row mt-3 pb-2 px-3 text-start">
+                            <div class="col border-bottom">Updates</div>
+                            <div class="col ">Tasks</div>
+                            <div class="col ">Deadlines</div>
+                            <div class="col-8 "></div>
+                        </div>
+                        
+                        <div class="tab-content mt-2 border rounded-3 p-3" id="myTabContent" style="height:25vh;">
                             <div class="tab-pane fade show active" id="updates" role="tabpanel" aria-labelledby="updates-tab">
                                 <ul>
                                     <li>
@@ -312,17 +223,10 @@
                     
                 </div>
             </div>
-            <div class="container fixed-bottom text-end pe-5 pb-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
-                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
-                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-            </div>
+
+            <!-- Message Icon -->
+            {% include 'dashboard/message-icon.html' %}
+            
         </div>            
-      
 
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
-</html>
+    {% endblock content %}
