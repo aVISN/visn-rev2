@@ -1,2 +1,2 @@
 # visn-rev2
-revision 2 of visn
+revision 2 of visn.
