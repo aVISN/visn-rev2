@@ -145,7 +145,7 @@
                         </h3>
                         <div class="container mt-4">
                             <div class="row">
-                                <div class="col-4 pt-3 ps-3 border text-center" height="150">
+                                <div class="col pt-3 ps-3 border text-center" height="150">
                                     <div class="col-9 w-100">
                                         <h3 class="">Project Name</h3>
                                         <h5 class="">Deadline</h2>
@@ -153,13 +153,13 @@
                                     </div>
                                 </div>
                                 <!-- files -->
-                                <div class="col-2 text-center pt-4 mt-2 ps-5" height="150">
+                                <div class="col-3 text-center pt-4 mt-2 ps-3" height="150">
                                     <h1 class="">8</h1>
                                     <h5 class="pt-4 mt-3">Files</h5>
                                     
                                 </div>
                                 <!-- Creator and img -->
-                                <div class="col-3 text-center pt-3  pe-5" height="150">
+                                <!-- <div class="col-3 text-center pt-3  pe-5" height="150">
                                     <div class="mb-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="gray" class="bi bi-person-circle" viewBox="0 0 16 16">
                                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -167,7 +167,7 @@
                                         </svg>
                                     </div>
                                     <h5 class="pt-2">Creator</h5>
-                                </div>
+                                </div> -->
                                 <!-- progress -->
                                 <div class="col-3 text-center pt-4" height="150">
                                     <div class="progress">
@@ -195,33 +195,53 @@
                               <button class="nav-link" id="deadlines-tab" data-bs-toggle="tab" data-bs-target="#deadlines" type="button" role="tab" aria-controls="deadlines" aria-selected="false">Deadlines</button>
                             </li>
                         </ul> -->
-                        <div class="row mt-3 pb-2 px-3 text-start">
-                            <div class="col border-bottom">Updates</div>
-                            <div class="col ">Tasks</div>
-                            <div class="col ">Deadlines</div>
-                            <div class="col-8 "></div>
+                        <div class="row mt-3 text-center">
+                            <div class="col text-center">Updates</div>
+                            <div class="col text-center">Tasks</div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-2 mx-4 border rounded-3 p-3" style="height:25vh;">
+                                <div class="">
+                                    <ul>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">Tasks for the project selected</div>
+                                <div class="tab-pane fade" id="deadlines" role="tabpanel" aria-labelledby="deadlines-tab">Deadlines for the project selected</div>
+                            </div>
+                            <div class="col mt-2 mx-4 border rounded-3 p-3" id="myTabContent" style="height:25vh;">
+                                <div class="tab-pane fade show active" id="updates" role="tabpanel" aria-labelledby="updates-tab">
+                                    <ul>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                        <li>
+                                            Updates for project selected
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">Tasks for the project selected</div>
+                                <div class="tab-pane fade" id="deadlines" role="tabpanel" aria-labelledby="deadlines-tab">Deadlines for the project selected</div>
+                            </div>
                         </div>
                         
-                        <div class="tab-content mt-2 border rounded-3 p-3" id="myTabContent" style="height:25vh;">
-                            <div class="tab-pane fade show active" id="updates" role="tabpanel" aria-labelledby="updates-tab">
-                                <ul>
-                                    <li>
-                                        Updates for project selected
-                                    </li>
-                                    <li>
-                                        Updates for project selected
-                                    </li>
-                                    <li>
-                                        Updates for project selected
-                                    </li>
-                                    <li>
-                                        Updates for project selected
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">Tasks for the project selected</div>
-                            <div class="tab-pane fade" id="deadlines" role="tabpanel" aria-labelledby="deadlines-tab">Deadlines for the project selected</div>
-                        </div>
                     </div>
                     
                 </section>
