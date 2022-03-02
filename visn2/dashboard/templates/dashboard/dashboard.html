@@ -20,11 +20,11 @@
                             <!-- <button class="btn btn-primary bg-gradient d-inline">Add Project</button> -->
                         </div>
                         <!-- Arrows and Projects -->
-                        <div class="container mt-3 ps-0">
+                        <div class="container mt-5 ps-0">
                             <div class="row">
                                 <!-- Left Arrow Container -->
                                 <div class="col pe-0">
-                                    <div class="rounded-3 bg-primary bg-gradient" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="width:35px;float: right;">
+                                    <div class="rounded-3  bg-gradient" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="width:35px;float: right;background-color:rgb(47, 103, 255);">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="180" fill="white" class="bi bi-caret-left" viewBox="0 0 16 16">
                                             <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
                                         </svg>
@@ -127,7 +127,7 @@
                                 </div>
                                 <!-- *********** -->
                                 <div class="col ps-0">
-                                    <div class="rounded-3 bg-primary bg-gradient" type="button"  data-bs-target="#carouselExampleDark" data-bs-slide="next" style="width:35px;float: left;">
+                                    <div class="rounded-3  bg-gradient" type="button"  data-bs-target="#carouselExampleDark" data-bs-slide="next" style="width:35px;float: left;background-color:rgb(47, 103, 255);">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="180" fill="white" class="bi bi-caret-right" viewBox="0 0 16 16">
                                             <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
                                         </svg>
@@ -138,22 +138,19 @@
                     </div>
                 </section>
                 <!-- Project Details -->
-                <section class="ms-2 mt-3">
-                    <div class="container">
-                        <h3 class="container border-bottom mt-5">
-                            <!-- Current Project -->
-                        </h3>
+                <section class="ms-2 mt-5 pb-4 rounded-3" style="border-top: solid 1px rgba(255, 0, 76,.2);border-bottom: solid 1px rgba(255, 0, 76,.2);"> <!--rgba(33,37,41,.2)-->
+                    <div class="container" >
                         <div class="container mt-4">
                             <div class="row">
-                                <div class="col pt-3 ps-3 border text-center" height="150">
+                                <div class="col pt-3 ps-3 border border-secondary rounded-3 text-center" style="background-color:rgba(33,37,41,.2);" height="150">
                                     <div class="col-9 w-100">
-                                        <h3 class="">Project Name</h3>
+                                        <h3 class="" style="color:rgb(47, 103, 255);">Project Name</h3>
                                         <h5 class="">Deadline</h2>
                                         <p>Short Description about the project blah blah</p>
                                     </div>
                                 </div>
                                 <!-- files -->
-                                <div class="col-3 text-center pt-4 mt-2 ps-3" height="150">
+                                <div class="col-3 text-center mt-4 ps-3" height="150">
                                     <h1 class="">8</h1>
                                     <h5 class="pt-4 mt-3">Files</h5>
                                     
@@ -169,7 +166,7 @@
                                     <h5 class="pt-2">Creator</h5>
                                 </div> -->
                                 <!-- progress -->
-                                <div class="col-3 text-center pt-4" height="150">
+                                <div class="col-3 text-center mt-3" height="150">
                                     <div class="progress">
                                         <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -182,7 +179,7 @@
                     </div>
                 </section>
                 <!-- Updates Tasks Deadlines -->
-                <section class="container mt-5 border-top pt-2">
+                <section class="container mt-5 pt-2">
                     <div class="container">
                         <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -195,45 +192,179 @@
                               <button class="nav-link" id="deadlines-tab" data-bs-toggle="tab" data-bs-target="#deadlines" type="button" role="tab" aria-controls="deadlines" aria-selected="false">Deadlines</button>
                             </li>
                         </ul> -->
-                        <div class="row mt-3 text-center">
-                            <div class="col text-center">Updates</div>
-                            <div class="col text-center">Tasks</div>
+                        <div class="row mt-3 text-left">
+                            <h5 class="col-5 text-center">Updates</h5>
+                            <div class="col">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-plus-square" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div>
+                            
+                            <h5 class="col-5 text-center">Tasks</h5>
+                            <div class="col">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-plus-square" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div>
+                            
                         </div>
                         <div class="row">
-                            <div class="col mt-2 mx-4 border rounded-3 p-3" style="height:25vh;">
+                            <div class="col mt-2 mx-4 rounded-3 p-3 text-start" style="height:25vh;">
                                 <div class="">
                                     <ul>
-                                        <li>
-                                            Updates for project selected
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>Updates for project selected</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>
-                                            Updates for project selected
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>Updates for project selected</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>
-                                            Updates for project selected
-                                        </li>
-                                        <li>
-                                            Updates for project selected
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>Updates for project selected</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">Tasks for the project selected</div>
                                 <div class="tab-pane fade" id="deadlines" role="tabpanel" aria-labelledby="deadlines-tab">Deadlines for the project selected</div>
                             </div>
-                            <div class="col mt-2 mx-4 border rounded-3 p-3" id="myTabContent" style="height:25vh;">
+                            <div class="col mt-2 mx-4 rounded-3 p-3 text-start" id="myTabContent" style="height:25vh;">
                                 <div class="tab-pane fade show active" id="updates" role="tabpanel" aria-labelledby="updates-tab">
                                     <ul>
-                                        <li>
-                                            Updates for project selected
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>Tasks for project selected</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>
-                                            Updates for project selected
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>Tasks for project selected</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>
-                                            Updates for project selected
-                                        </li>
-                                        <li>
-                                            Updates for project selected
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>Tasks for project selected</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
