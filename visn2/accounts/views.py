@@ -12,7 +12,7 @@ from .models import *
 from .forms import CreateUserForm, MyUserCreationForm
 
 def registerPage(request):
-    form = MyUserCreationForm()#CreateUserForm()
+    form = MyUserCreationForm()#CreateUserForm() 
 
     if request.method == 'POST':
         form = MyUserCreationForm(request.POST)#CreateUserForm(request.POST)
