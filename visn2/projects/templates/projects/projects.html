@@ -2,7 +2,59 @@
 {% load static %}
 
 {% block content %}
-    <h1> All Projects</h1>
-    <a class="nav-link" href="{% url 'project' %}">Link to Specific Project</a>
-    <p>Every Project will have a link with ID (dynamic) </p>
+
+    
+    <div class="row mt-5 container mx-auto">
+            <div class="col-8">
+                <h1> All Projects</h1>
+                <a class="nav-link" href="{% url 'project' %}">Link to Specific Project</a>
+                <p>Every Project will have a link with ID (dynamic) </p>
+            </div>
+            <div class="col-4  text-center">
+                <a href="" class="btn btn-primary">Add Project</a>
+            </div>
+    </div>
+
+    <!-- replace # with %  -->
+    <div class="col-md-10" style="padding-top:10px;">
+        <div class="row">
+            <div class="col-sm-8">
+            <!-- <a href="{# url 'newproj' #}" class="btn btn-success btn-lg">New Project</a> -->
+            </div>
+        </div>
+        <div id="project-search" class="mt-3 mx-auto p-5" >
+            <form class="search">
+                Search by Keyword
+                <input placeholder="Projects" name="search_text"></input>
+            </form>
+          </div>
+        
+        <hr />
+       <div class="container">
+        <!-- {# for group_project in projects #} -->
+            <div class="row">
+                <!-- {#for project in group_project#} -->
+                <div class="col-sm-4">
+                    <p>
+                    <!-- Bootstrap5 buttons: https://www.w3schools.com/bootstrap5/bootstrap_buttons.php -->
+                    <a href="{# url 'projectv' #}?id={{project.id}}" class="btn btn-success btn-lg">{{project.name}}</a>
+                    </p>
+                    <p>{{project.discription}}</p>
+                </div>
+                <!-- {#endfor#} -->
+            </div>
+    
+        <!-- {# endfor #} -->
+        
+        <div class="row">
+            <div class="col-sm-4">
+            <button id="chat_ui">Chat to</button>
+            <!-- {# include 'sub_chat.html' #} -->
+            </div>
+        </div>
+       </div>
+    </div>
+
+
+    <!--  -->
 {% endblock content %}
