@@ -9,13 +9,13 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
 from .models import *
-from .forms import CreateUserForm 
+from .forms import CreateUserForm, MyUserCreationForm
 
 def registerPage(request):
-    form = CreateUserForm()
+    form = MyUserCreationForm()#CreateUserForm()
 
     if request.method == 'POST':
-        form = CreateUserForm(request.POST)
+        form = MyUserCreationForm(request.POST)#CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
             user = form.cleaned_data.get('username')
