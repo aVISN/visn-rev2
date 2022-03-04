@@ -12,6 +12,6 @@ from django.contrib.auth.models import AbstractUser
 
 
 class DjUser(AbstractUser):
-    userType = models.IntegerField(default=2,choices=((1, 'client'), (2, 'Freelancer')))
+    userType = models.IntegerField(default=1,choices=((1, 'client'), (2, 'Freelancer')))
 
 #-------
