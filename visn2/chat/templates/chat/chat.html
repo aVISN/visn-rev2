@@ -1,1 +1,47 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+    {% block styles %}
+    <link href="{% static 'css/chat.css' %}" rel="stylesheet"/>
+    <!-- block of style links for each page -->
+    {% endblock styles%}
+    
+{% block content %}
+<div class="col-md-10" style="text-align:center;padding-top:10px;">
+   <div class="search-wrapper">
+      <form class="search">
+         <input class="search-inp"  type="text" name='search_text'><button class="search-btn">
+            <i class="fas fa-search"></i>
+         </button>
+      </form>
+   </div>
+    <article class="article">
+       <ul class="first">
+           <li class= "Recent-chat">
+              Recent chats 
+              <div>
+               {% for msg in last_msgs %}
+                 <span class="rchat">
+                    [{{msg.msgTime}}] {{msg.mfrom.username}} TO {{msg.mto.username}}: {{msg.msg}}
+                 </span>
+               {% endfor %}
+              </div>
+          
+           </li>
 
+            {%for talker, talks in last_talks%}
+           <li class="srol">
+               {{talker.username}} <span class="jia"> </a></span></a>
+               {%for msg in talks%}
+               <span class="rchat">
+                [{{msg.msgTime}}] {{msg.mfrom.username}} TO {{msg.mto.username}}: {{msg.msg}}
+                </span>
+                {%endfor%}
+             </li>
+             {%endfor%}
+
+       </ul>
+   </article>
+</div>
+
+</div>
+{% endblock content %}
