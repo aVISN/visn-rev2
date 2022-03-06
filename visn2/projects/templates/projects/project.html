@@ -1,0 +1,40 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="col-md-10" style="padding-top:10px;">
+        <div class="row">
+            <div class="col-sm-8">
+            <a href="{% url 'create_project' %}" class="btn btn-success btn-lg">New Project</a>
+            </div>
+        </div>
+        <hr />
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3 class="dashboard-card-title">
+                        {{project.name}}
+                    </h3>
+                    <hr class="rounded">
+                    <h5>Deadline</h5>
+                    <span>{{project.deadline}}</span>
+                    <hr class="rounded">
+                    <p>
+                        {{project.discription}}
+                    </p>
+                    <hr class="rounded">
+                    <h5>Files</h5>
+                    <ul>
+                        {% for file in files %}
+                        <a href="{{ file.filename.url }}" class="btn btn-success btn-sm" target="_blank">
+                            {{ file.filename }}
+                          </a>
+                        {%endfor%}
+                    </ul>
+                    </div>
+            </div>
+       </div>
+    </div>
+
+{% endblock content %}
