@@ -41,6 +41,7 @@ body {
 
 @media screen and (min-width: 768px){
     .main{
+        margin-top: 35%;
         margin-left: 40%; 
     }
 
@@ -52,18 +53,18 @@ body {
         left: 0;
     }
 
-    .user-name
+    .text-box
     {
-        margin-top: 80%;
+        margin-bottom: 5%;
         position: relative;
     }
 
-    .user-name input
+    .text-box input
     {
         width: 100%;
         height: 100%;
     }
-    .user-name label
+    .text-box label
     {
         position: absolute;
         width: 100%;
@@ -72,7 +73,7 @@ body {
         color: gray;
         pointer-events: none;
     }
-    .user-name label::after
+    .text-box label::after
     {
         content: "";
         position: absolute;
@@ -86,7 +87,7 @@ body {
         left: 0px;
         transition: all 0.3s ease;
     }
-    .user-name input:focus + .label-name .content-name
+    .text-box input:focus + .label-name .content-name
     {
         transform: translateY(-150%);
         font-size: 10px;
