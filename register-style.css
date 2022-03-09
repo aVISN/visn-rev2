@@ -41,8 +41,10 @@ body {
 
 @media screen and (min-width: 768px){
     .main{
+        
         margin-top: 35%;
-        margin-left: 40%; 
+        margin-left: 40%;
+        
     }
 
     .sidenav{
@@ -83,17 +85,21 @@ body {
     .content-name
     {
         position: absolute;
-        bottom: 5px;
+        bottom: 0px;
         left: 0px;
         transition: all 0.3s ease;
     }
-    .text-box input:focus + .label-name .content-name
+    .text-box input:focus + .label-name .content-name, .text-box input:valid + .label-name .content-name
     {
-        transform: translateY(-150%);
+        transform: translateY(-175%);
         font-size: 10px;
     }
 }
 
+.form
+{
+    margin: auto;
+}
 
 .login-main-text{
     margin-top: 20%;
@@ -124,6 +130,14 @@ body {
     max-width: 100%;
     max-height: auto;
     object-fit: contain;
+}
+
+.form
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 /* h3
