@@ -147,6 +147,10 @@ body {
     margin-bottom: 1vh;
 }
 
+.box
+{
+    border: 1px;
+}
 
 /* h3
 {
